@@ -128,7 +128,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("I'm alive 😊")
+        update.effective_message.reply_text("Please Join my master main channel ")
 
 def send_start(bot, update):
     #Try to remove old message
@@ -143,14 +143,14 @@ def send_start(bot, update):
     text = PM_START
 
     
-    keyboard = [[InlineKeyboardButton(text="🇱🇰 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
-        InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
+    keyboard = [[InlineKeyboardButton(text="Language", callback_data="set_lang_")]]
+    keyboard += [[InlineKeyboardButton(text="Reporting", callback_data="cntrl_panel_M"), 
+        InlineKeyboardButton(text="Help", callback_data="help_back")]]
 
-    keyboard += [[InlineKeyboardButton(text="Updates Channel 🗣", url="t.me/new_ehi"),
-        InlineKeyboardButton(text="Support Group 👥", url="t.me/leosupportx")]]
+    keyboard += [[InlineKeyboardButton(text="Updates", url="t.me/theekshana_official"),
+        InlineKeyboardButton(text="Support", url="t.me/theekshana_support")]]
     
-    keyboard += [[InlineKeyboardButton(text="➕ Add me to your group ➕", url="t.me/groupmasternaviya_bot?startgroup=true")]]
+    keyboard += [[InlineKeyboardButton(text="Add me to your group", url="t.me/Thegroupmasterbott?startgroup=true")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 

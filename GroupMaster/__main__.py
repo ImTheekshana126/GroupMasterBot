@@ -20,15 +20,11 @@ from GroupMaster.modules.helper_funcs.misc import paginate_modules
 from GroupMaster.modules.translations.strings import tld, tld_help 
 from GroupMaster.modules.connection import connected
 
-PM_START = """Hello {} 👋
+PM_START = """🌺Hey There! My name is Levi.
+I'm here to help you manage your groups!
 
-I'm  {} 🇱🇰
+Hit /help to find out more about how to use me to my full potential.
 
-I can Manage your groups with more functions 😏
-
-Click /help or Help button below to find out more about how to use me to my full potential 🙂
-
-Leo Projects 🇱🇰
 """
 
 

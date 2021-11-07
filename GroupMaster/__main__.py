@@ -20,7 +20,7 @@ from GroupMaster.modules.helper_funcs.misc import paginate_modules
 from GroupMaster.modules.translations.strings import tld, tld_help 
 from GroupMaster.modules.connection import connected
 
-PM_START = """🌺Hey There! My name is Levi.
+PM_START = """Hey There! My name is *Group Master*.
 I'm here to help you manage your groups!
 
 Hit /help to find out more about how to use me to my full potential.
@@ -148,9 +148,9 @@ def send_start(bot, update):
         InlineKeyboardButton(text="Help", callback_data="help_back")]]
 
     keyboard += [[InlineKeyboardButton(text="Updates", url="t.me/theekshana_official"),
-        InlineKeyboardButton(text="Support", url="t.me/theekshana_support")]]
+        InlineKeyboardButton(text="Source", url="https://github.com/ImTheekshana126/GroupMasterBot")]]
     
-    keyboard += [[InlineKeyboardButton(text="Add me to your group", url="t.me/Thegroupmasterbott?startgroup=true")]]
+    keyboard += [[InlineKeyboardButton(text="Add me to your group", url="t.me/Thegroupmasterbot?startgroup=true")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 
@@ -199,10 +199,10 @@ def control_panel(bot, update):
             member = chatG.get_member(user.id)
             if member.status in ('administrator', 'creator'):
                 text += f"\nConnected chat - *{chatG.title}* (you {member.status})"
-                keyboard += [[InlineKeyboardButton(text="👥 Group settings", callback_data="cntrl_panel_G_back")]]
+                keyboard += [[InlineKeyboardButton(text=" Group settings", callback_data="cntrl_panel_G_back")]]
             elif user.id in SUDO_USERS:
                 text += f"\nConnected chat - *{chatG.title}* (you sudo)"
-                keyboard += [[InlineKeyboardButton(text="👥 Group settings (SUDO)", callback_data="cntrl_panel_G_back")]]
+                keyboard += [[InlineKeyboardButton(text=" Group settings (SUDO)", callback_data="cntrl_panel_G_back")]]
             else:
                 text += f"\nConnected chat - *{chatG.title}* (you aren't an admin!)"
         else:
@@ -232,7 +232,7 @@ def control_panel(bot, update):
             query.message.reply_text(text=text, arse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(keyboard))
 
         elif back_match:
-            text = "*User control panel* 🛠"
+            text = "*User control panel* "
             
             query.message.reply_text(text=text, parse_mode=ParseMode.MARKDOWN,
                     reply_markup=InlineKeyboardMarkup(paginate_modules(user.id, 0, USER_SETTINGS, "cntrl_panel_U")))

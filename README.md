@@ -1,12 +1,11 @@
-<center><h1><b>Group Master</b></h1>
+<h1><b>Group Master</b></h1>
 <img src="https://telegra.ph/file/793e707d69c46a04d364d.jpg">
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FImtheekshana126%2FGroupMasterBot)
 
 Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and 
 simple to use.
 
-Can be found on telegram as [theekshana](https://t.me/imtheekshana).
+Can be found on telegram as [Theekshana](https://t.me/imtheekshana).
 
 Marie and I are moderating a [support group](https://t.me/theekshana_official) 🇱🇰, where you can ask for help setting up your
 bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
@@ -19,7 +18,7 @@ Alternatively, [find me on telegram](https://t.me/naviya2)! (Keep all support qu
 
 ## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Naviya2/GroupMasterOld)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/imtheekshana126/GroupMaster)
 
 ## Starting the bot.
 
